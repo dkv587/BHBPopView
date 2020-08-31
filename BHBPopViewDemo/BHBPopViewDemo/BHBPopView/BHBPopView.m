@@ -98,7 +98,7 @@
     NSUInteger count = imageArray.count;
     NSMutableArray * items = [NSMutableArray array];
     for (int i = 0; i < count; i++) {
-        BHBItem * item = [[BHBItem alloc]initWithTitle:titles[i] Icon:imageArray[i]];
+        BHBItem * item = [[BHBItem alloc]initWithTitle:titles[i] Icon:imageArray[i] index:i];
         [items addObject:item];
     }
     return [self showToView:view withItems:items andSelectBlock:block];

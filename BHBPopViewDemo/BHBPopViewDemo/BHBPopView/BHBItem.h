@@ -10,9 +10,10 @@
 
 @interface BHBItem : NSObject
 
-@property (nonatomic,copy) NSString * title;
-@property (nonatomic,copy) NSString * icon;
+@property (nonatomic, copy) NSString * title;
+@property (nonatomic, copy) NSString * icon;
+@property (nonatomic, assign) NSInteger index;
 
--(instancetype)initWithTitle:(NSString *)title Icon:(NSString *)icon;
+- (instancetype)initWithTitle:(NSString *)title Icon:(NSString *)icon index:(NSInteger)index;
 
 @end
