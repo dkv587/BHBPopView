@@ -76,7 +76,8 @@
     for (int i = 0; i < items.count; i ++) {
         item = items[i];
         BHBCustomBtn * btn = [BHBCustomBtn buttonWithType:UIButtonTypeCustom];
-        [btn bhb_setImage:[NSString stringWithFormat:@"%@",item.icon]];
+//        [btn bhb_setImage:[NSString stringWithFormat:@"%@",item.icon]];
+        [btn setImage:[UIImage imageNamed:item.icon] forState:UIControlStateNormal];
         [btn.imageView setContentMode:UIViewContentModeCenter];
         [btn setTitle:item.title forState:UIControlStateNormal];
         btn.titleLabel.textAlignment = NSTextAlignmentCenter;
